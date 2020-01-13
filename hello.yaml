@@ -82,7 +82,7 @@ spec:
         custom-header:
           exact: a
       uri:
-        prefix: "/prediction/"
+        prefix: "/ver1/"
       ignoreUriCase: true
     route:
     - destination:
@@ -94,7 +94,7 @@ spec:
         custom-header:
           exact: b
       uri:
-        prefix: "/prediction/"
+        prefix: "/ver2/"
       ignoreUriCase: true
     route:
     - destination:
