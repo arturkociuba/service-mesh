@@ -1,15 +1,15 @@
 # test by sending request:
-# curl -v 'http://hello/ver1/' -H 'custom-header: a'
+# curl -v 'http://hello:8087/ver1/' -H 'custom-header: a'
 # expected to return 200
-# curl -v 'http://hello/ver2/' -H 'custom-header: b'
+# curl -v 'http://hello:8087/ver2/' -H 'custom-header: b'
 # expected to return 200
 # any other variations expected to return 404
 # eg:
-# curl -v 'http://hello/ver2/' -H 'custom-header: bZZZ'
+# curl -v 'http://hello:8087/ver2/' -H 'custom-header: bZZZ'
 # expected to return 404
-# curl -v 'http://hello/ver2ZZ/' -H 'custom-header: b'
+# curl -v 'http://hello:8087/ver2ZZ/' -H 'custom-header: b'
 # expected to return 404
-# curl -v 'http://hello/ver1/' -H 'custom-header: b'
+# curl -v 'http://hello:8087/ver1/' -H 'custom-header: b'
 # expected to return 404
 ---
 apiVersion: apps/v1
